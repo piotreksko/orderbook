@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["es2019", "DOM"],
+    "moduleResolution": "node",
+    "allowJs": false,
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "./build",
+    "rootDir": "./src",
+    "isolatedModules": true,
+    "removeComments": true,
+    "strict": false,
+    "noImplicitAny": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "preserveConstEnums": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noFallthroughCasesInSwitch": true,
+    "noEmit": true
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ],
+  "filesGlob": [
+    "typings/index.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.jss"
+  ],
+  "types": ["react", "react-native", "jest"],
+  "target": "es6",
+  "jsx": "react",
+  "compileOnSave": false,
+  "include": ["src", "public/workers.js"]
+}
