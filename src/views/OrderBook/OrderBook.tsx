@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import useStyles from "./OrderBookJSS";
 import OrderBookDisplay from "src/components/OrderBook/OrderBookDisplay/OrderBookDisplay";
 import OrderBookHeader from "src/components/OrderBook/OrderBookHeader/OrderBookHeader";
@@ -19,31 +19,31 @@ const OrderBook = (): React.ReactElement => {
   );
   const { worker, orderBook } = useOrderBookWorker();
 
-  const reconnect = (): void => {
+  const reconnect = useCallback(() => {
     setDisconnectedOnBlur(false);
-    worker.postMessage({
+    worker?.postMessage({
       type: WorkerMessages.subscribe,
       productId: subscribedProduct,
     });
-  };
+  }, [worker]);
 
-  const toggleFeed = (): void => {
+  const toggleFeed = useCallback(() => {
     const toSubscribe =
       subscribedProduct === ProductId.pi_ethusd
         ? ProductId.pi_xbtusd
         : ProductId.pi_ethusd;
 
-    worker.postMessage({
+    worker?.postMessage({
       type: WorkerMessages.toggle_feed,
       productId: toSubscribe,
     });
 
     setSubscribedProduct(toSubscribe);
-  };
+  }, [worker]);
 
   const onLostFocus = (): void => {
     if (!disconnectedOnBlur) {
-      worker.postMessage({
+      worker?.postMessage({
         type: WorkerMessages.close_subscription,
       });
       setDisconnectedOnBlur(true);

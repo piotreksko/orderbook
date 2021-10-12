@@ -2,7 +2,6 @@ import { act, render, screen } from "@testing-library/react";
 import OrderBook from "./OrderBook";
 import mockOrderBook from "src/tests/mocks/mockOrderBook";
 import {
-  EventType,
   ProductId,
   WorkerMessages,
 } from "src/constants/orderBookWebSocket.const";

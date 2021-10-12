@@ -1,4 +1,5 @@
 import useStyles from "./OrderBookButtonsJSS";
+import { memo } from "react";
 
 interface Props {
   disconnectedOnBlur: boolean;
@@ -33,4 +34,4 @@ const OrderBookButtons = ({
   );
 };
 
-export default OrderBookButtons;
+export default memo(OrderBookButtons);

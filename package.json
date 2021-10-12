@@ -2,7 +2,7 @@
   "name": "orderbook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://piotreksko.github.io/piotr-12-10-2020",
+  "homepage": "https://piotreksko.github.io/piotr-12-10-2020",
   "dependencies": {
     "@babel/preset-typescript": "^7.15.0",
     "@reduxjs/toolkit": "^1.6.1",
