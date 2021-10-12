@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/piotr-12-10-2020/static/css/main.1568b090.chunk.css",
+    "main.js": "/piotr-12-10-2020/static/js/main.d9009452.chunk.js",
+    "main.js.map": "/piotr-12-10-2020/static/js/main.d9009452.chunk.js.map",
+    "runtime-main.js": "/piotr-12-10-2020/static/js/runtime-main.122068b5.js",
+    "runtime-main.js.map": "/piotr-12-10-2020/static/js/runtime-main.122068b5.js.map",
+    "static/js/2.c9e868b6.chunk.js": "/piotr-12-10-2020/static/js/2.c9e868b6.chunk.js",
+    "static/js/2.c9e868b6.chunk.js.map": "/piotr-12-10-2020/static/js/2.c9e868b6.chunk.js.map",
+    "daba64fefa711758fe41.worker.js": "/piotr-12-10-2020/daba64fefa711758fe41.worker.js",
+    "daba64fefa711758fe41.worker.js.map": "/piotr-12-10-2020/daba64fefa711758fe41.worker.js.map",
+    "index.html": "/piotr-12-10-2020/index.html",
+    "static/css/main.1568b090.chunk.css.map": "/piotr-12-10-2020/static/css/main.1568b090.chunk.css.map",
+    "static/js/2.c9e868b6.chunk.js.LICENSE.txt": "/piotr-12-10-2020/static/js/2.c9e868b6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.122068b5.js",
+    "static/js/2.c9e868b6.chunk.js",
+    "static/css/main.1568b090.chunk.css",
+    "static/js/main.d9009452.chunk.js"
+  ]
+}
