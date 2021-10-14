@@ -25,7 +25,7 @@ const OrderBook = (): React.ReactElement => {
       type: WorkerMessages.subscribe,
       productId: subscribedProduct,
     });
-  }, [worker]);
+  }, [worker, disconnectedOnBlur]);
 
   const toggleFeed = useCallback(() => {
     const toSubscribe =
@@ -39,7 +39,7 @@ const OrderBook = (): React.ReactElement => {
     });
 
     setSubscribedProduct(toSubscribe);
-  }, [worker]);
+  }, [worker, subscribedProduct]);
 
   const onLostFocus = (): void => {
     if (!disconnectedOnBlur) {
